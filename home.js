@@ -82,7 +82,7 @@ function displayCurrentContent(content, contentType, res) {
 }
 
 async function connectAndDisplay(age, gender, workout_type, res) {
-    var t = `<body style = "background-color: #047aed">`;
+    var t = `<body style = "background-color: #047aed; color: #fff;">`;
 
     MongoClient.connect(mongoUrl, {useUnifiedTopology: true}, async (err, database) => {
         if (err) {
@@ -99,7 +99,7 @@ async function connectAndDisplay(age, gender, workout_type, res) {
             queryOptions = "";
             theQuery = {Age: age};
             queryOptions = {sort:{Age:1}, projection:{_id:0, Age:1, Gender: 1, workout_type: 1, Name: 1, Number: 1}};
-            t += `<h1>Your workout partner is: </h1><h1>`;
+            t += `<h1 style= "font-family: 'Lato', sans-serif">Your workout partner is: </h1><h1>`;
 
             var result = await collection.find(theQuery, queryOptions).toArray();
 
@@ -110,7 +110,7 @@ async function connectAndDisplay(age, gender, workout_type, res) {
                 result.forEach(function (curr) {
                     console.log(`${curr.Name} has age ${curr.Age}`);
                     t += `${curr.Name}</h1>`;
-                    t += `<h2>Contact them at ${curr.Number}</h2>`;
+                    t += `<h2 style= "font-family: 'Lato', sans-serif">Contact them at ${curr.Number}</h2>`;
                 });
             }
         }
