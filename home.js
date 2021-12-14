@@ -82,7 +82,7 @@ function displayCurrentContent(content, contentType, res) {
 }
 
 async function connectAndDisplay(age, gender, workout_type, res) {
-    var t = `<body style = "background-color: linear-gradient(#047aed, white); font-family: 'Lato', sans-serif">`;
+    var t = `<body style = "background-color: #047aed; font-family: 'Lato', sans-serif">`;
 
     MongoClient.connect(mongoUrl, {useUnifiedTopology: true}, async (err, database) => {
         if (err) {
@@ -110,7 +110,7 @@ async function connectAndDisplay(age, gender, workout_type, res) {
                 result.forEach(function (curr) {
                     console.log(`${curr.Name} has age ${curr.Age}`);
                     t += `${curr.Name}</h1>`;
-                    t += `<h1>Hit him up at ${curr.Number}</h1>`;
+                    t += `<h2>Contact them at ${curr.Number}</h2>`;
                 });
             }
         }
