@@ -82,7 +82,7 @@ function displayCurrentContent(content, contentType, res) {
 }
 
 async function connectAndDisplay(age, gender, workout_type, res) {
-    var t = `<body style = "background-color: aqua;">`;
+    var t = `<body style = "background-color: linear-gradient(#047aed, white); font-family: 'Lato', sans-serif">`;
 
     MongoClient.connect(mongoUrl, {useUnifiedTopology: true}, async (err, database) => {
         if (err) {
