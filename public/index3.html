@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="../app.js"></script>
+    </script>
+    <title>Stock Ticker COMP 20</title>
+</head>
+<body>
+    <h1>Stock Ticker</h1>
+
+    <form method="POST" action="/result" target="_blank">
+        Age: <br>
+        <input type="radio" name="input_age" id="input_age" value="19"> 18-23 <br>
+        <input type="radio" name="input_age" id="input_age" value="25"> 24-29 <br>
+        <input type="radio" name="input_age" id="input_age" value="32"> 30-35 <br>
+
+        Gender: <br>
+        <input type="radio" name="input_gender" id="input_gender" value="male"> male <br>
+        <input type="radio" name="input_gender" id="input_gender" value="female"> female <br>
+        <input type="radio" name="input_gender" id="input_gender" value="non-binary"> non-binary <br>
+        <input type="radio" name="input_gender" id="input_gender" value="no-answer"> prefer not to answer <br>
+
+        Type of Workout: <br>
+        <input type="radio" name="input_workout_type" id="input_workout_type" value="lifting"> lifting <br>
+        <input type="radio" name="input_workout_type" id="input_workout_type" value="cardio"> cardio <br>
+        <input type="radio" name="input_workout_type" id="input_workout_type" value="swimming"> swimming <br>
+        <input type="radio" name="input_workout_type" id="input_workout_type" value="sports"> sports <br>
+
+
+
+        <div id="enter-message">
+            <p>Enter the actual name of the information and make sure it matches type above</p>
+        </div>
+        <input type="text" name="user_input" id="user_input"> <br><br>
+        <input type="text" name="hamza_input" id="hamza_input"> <br><br>
+
+        <input type="submit" name="FormBtn" id="FormBtn" value="Submit"><br>
+
+        <div id="answer"></div>
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,193 @@
+/* Add a background color and some padding around the form */
+.container1 {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+h2{
+  text-decoration: underline;
+  padding: 10px;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+}
+
+/* Style big question boxes & radio buttons */
+.wrapper{
+  width: 100%;
+  background: #fff;
+  box-shadow: 5px 5px 30px rgba(0,0,0,0.2);
+}
+.wrapper .title{
+  color: #fff;
+  line-height: 65px;
+  text-align: center;
+  background: var(--primary-color);
+  font-size: 25px;
+  font-weight: 500;
+  border-radius: 10px 10px 0 0;
+}
+.wrapper .box{
+  padding: 20px 30px;
+  background: #fff;
+  border-radius: 10px;
+}
+.wrapper .box label{
+  display: flex;
+  height: 53px;
+  width: 100%;
+  align-items: center;
+  border: 1px solid lightgrey;
+  margin: 10px 0;
+  padding-left: 20px;
+  cursor: default;
+  transition: all 0.3s ease;
+}
+#option-1:checked ~ .option-1,
+#option-2:checked ~ .option-2,
+#option-3:checked ~ .option-3,
+#option-4:checked ~ .option-4,
+#option-5:checked ~ .option-5,
+#option-6:checked ~ .option-6,
+#option-7:checked ~ .option-7,
+#option-8:checked ~ .option-8,
+#option-9:checked ~ .option-9,
+#option-10:checked ~ .option-10,
+#option-11:checked ~ .option-11,
+#option-12:checked ~ .option-12,
+#option-13:checked ~ .option-13,
+#option-14:checked ~ .option-14,
+#option-15:checked ~ .option-15,
+#option-16:checked ~ .option-16,
+#option-17:checked ~ .option-17,
+#option-18:checked ~ .option-18,
+#option-19:checked ~ .option-19{
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+}
+.wrapper .box label .dot{
+  height: 20px;
+  width: 20px;
+  background: #d9d9d9;
+  border-radius: 50%;
+  position: relative;
+  transition: all 0.3s ease;
+}
+#option-1:checked ~ .option-1 .dot,
+#option-2:checked ~ .option-2 .dot,
+#option-3:checked ~ .option-3 .dot,
+#option-4:checked ~ .option-4 .dot,
+#option-5:checked ~ .option-5 .dot,
+#option-6:checked ~ .option-6 .dot,
+#option-7:checked ~ .option-7 .dot,
+#option-8:checked ~ .option-8 .dot,
+#option-9:checked ~ .option-9 .dot,
+#option-10:checked ~ .option-10 .dot,
+#option-11:checked ~ .option-11 .dot,
+#option-12:checked ~ .option-12 .dot,
+#option-13:checked ~ .option-13 .dot,
+#option-14:checked ~ .option-14 .dot,
+#option-15:checked ~ .option-15 .dot,
+#option-16:checked ~ .option-16 .dot,
+#option-17:checked ~ .option-17 .dot,
+#option-18:checked ~ .option-18 .dot,
+#option-19:checked ~ .option-19 .dot{
+  background: #fff;
+}
+.box label .dot::before{
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(2);
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+#option-1:checked ~ .option-1 .dot::before,
+#option-2:checked ~ .option-2 .dot::before,
+#option-3:checked ~ .option-3 .dot::before,
+#option-4:checked ~ .option-4 .dot::before,
+#option-5:checked ~ .option-5 .dot::before,
+#option-6:checked ~ .option-6 .dot::before,
+#option-7:checked ~ .option-7 .dot::before,
+#option-8:checked ~ .option-8 .dot::before,
+#option-9:checked ~ .option-9 .dot::before,
+#option-10:checked ~ .option-10 .dot::before,
+#option-11:checked ~ .option-11 .dot::before,
+#option-12:checked ~ .option-12 .dot::before,
+#option-13:checked ~ .option-13 .dot::before,
+#option-14:checked ~ .option-14 .dot::before,
+#option-15:checked ~ .option-15 .dot::before,
+#option-16:checked ~ .option-16 .dot::before,
+#option-17:checked ~ .option-17 .dot::before,
+#option-18:checked ~ .option-18 .dot::before,
+#option-19:checked ~ .option-19 .dot::before{
+  background: var(--primary-color);
+  transform: translate(-50%, -50%) scale(1);
+}
+.wrapper .box label .text{
+  color: #333;
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 10px;
+  transition: color 0.3s ease;
+}
+#option-1:checked ~ .option-1 .text,
+#option-2:checked ~ .option-2 .text,
+#option-3:checked ~ .option-3 .text,
+#option-4:checked ~ .option-4 .text,
+#option-5:checked ~ .option-5 .text,
+#option-6:checked ~ .option-6 .text,
+#option-7:checked ~ .option-7 .text,
+#option-8:checked ~ .option-8 .text,
+#option-9:checked ~ .option-9 .text,
+#option-10:checked ~ .option-10 .text,
+#option-11:checked ~ .option-11 .text,
+#option-12:checked ~ .option-12 .text,
+#option-13:checked ~ .option-13 .text,
+#option-14:checked ~ .option-14 .text,
+#option-15:checked ~ .option-15 .text,
+#option-16:checked ~ .option-16 .text,
+#option-17:checked ~ .option-17 .text,
+#option-18:checked ~ .option-18 .text,
+#option-19:checked ~ .option-19 .text{
+  color: #fff;
+}
+.wrapper .box input[type="radio"]{
+  display: none;
+}
+
+input[type=radio] {
+  cursor: pointer;
+}
+
+/* Style the submit button with a specific outline color etc */
+input[type=submit] {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid #04AA6D;
+  padding: 12px 34px;
+  font-size: 13px;
+  background-color: #45a049;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, fill button with a green color */
+input[type=submit]:hover {
+  background-color: #001dab;
+  border: 1px solid #001dab;
+  transition: 1s;
+  color: #fff;
+}

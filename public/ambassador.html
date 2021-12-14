@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="utilities.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="ambassador.css">
+
+    <title>Gym Buddy.</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="container flex">
+            <h1 class="logo"><a href="index.html">Gym Buddy.</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="partner_workout.html">The Science</a></li>
+                    <li><a href="features.html">Algorithm</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="gymlocator.html">Gym Locator</a></li>
+                    <li><a href="ambassador.html">Ambassador</a></li>
+                    <li><a href="docs.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Head -->
+    <section class="features-head bg-primary py-3">
+        <div class="container grid">
+            <div>
+                <h1 class="xl">Become an Ambassador</h1>
+                <p class="lead">
+                    We are seeking passionate, driven, and life-tested 
+                    individuals to represent Gym Buddy as brand ambassadors, 
+                    social influences, and expert contributors.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sub head -->
+    <section class="features-sub-head bg-light py-3">
+        <div class="container grid">
+            <div>
+                <h1 class="md">The Gym Buddy Ambassador Program</h1>
+                <p>
+                    At Gym Buddy, we believe in the power of a community built 
+                    by authentic interactions and relationships. We strive to 
+                    connect all levels of athletes, coaches, and entrepreneurs 
+                    to one another to help spread perspectives, experience, and 
+                    foster powerful and life-changing growth on all fronts. We 
+                    believe that by collaborating with top-notch individuals 
+                    who embody our core values, we can elevate the standard or 
+                    this profession, empower all individuals to reach higher, 
+                    and help more people live stronger, healthier, and happier 
+                    lives.
+                </p>
+            </div>
+            <div class="card bg-light p-3">
+                <img src="img1-amassador.jpg" style="width:100%">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact form -->
+    <section class="features-sub-head bg-light py-3">
+        <div class="container grid">
+            <div>
+                <h1 class="md">Contact Us</h1>
+                <p>
+                    If you are at all interested in joining the Gym Buddy 
+                    Ambassador program, please apply below and our Brand 
+                    Ambassador Coordinator will reach out to you with more 
+                    information!
+                </p>
+                <div class="container2">
+
+                    <form name="ambassadorForm">
+                  
+                      <label for="fname">First Name *</label>
+                      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                  
+                      <label for="lname">Last Name * </label>
+                      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                      <label for="email">Email *</label>
+                      <input type="text" id="email" name="email" placeholder="FirstLast@gmail.com">
+                  
+                      <label for="country">Country</label>
+                      <select id="country" name="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                      </select>
+                  
+                      <label for="subject">Why do you want to be a Gym Buddy Ambassador?</label>
+                      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                  
+                      <input type="submit" value="Submit" onclick=submitted()>
+
+                  
+                    </form>
+                  </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark py-5">
+        <div class="container grid grid-3">
+            <div>
+                <h1>Gym Buddy.
+                </h1>
+                <p>Copyright &copy; 2021</p>
+            </div>
+           <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="docs.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+<script language="javascript">
+
+
+    function validateForm() {
+    let x = document.forms["ambassadorForm"]["fname"].value;
+    let y = document.forms["ambassadorForm"]["lname"].value;
+    let z = document.forms["ambassadorForm"]["email"].value;
+
+        if (x == "") {
+            alert("First name must be filled out");
+            return false;
+        }
+        else if (y == "") {
+            alert("Last name must be filled out");
+            return false;       
+        }
+        else if (z == "") {
+            alert("Email must be filled out");
+            return false; 
+        }
+        else {
+            return true;
+        }
+    }
+
+    function submitted() {
+        var valid_form = validateForm();
+        if (valid_form) {
+            alert("Your form has been submitted");
+        }
+    }
+
+</script>
