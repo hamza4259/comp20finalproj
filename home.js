@@ -7,11 +7,6 @@ const MongoClient = require('mongodb').MongoClient;
 
 const mongoUrl = "mongodb+srv://hali03:hali03@cluster0.finwj.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
-<html>
-    <style>
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
-</style>
-</html>
 
 const server = http.createServer((req, res) => {
     var filePath = path.join(
