@@ -14,7 +14,7 @@ const server = http.createServer((req, res) => {
         'public',
         req.url === '/' ? 'homePage.html' : req.url
     );
-    // Ensure correct content type is selected
+    // Ensure correct content type is picked
     var contentType = getContType(filePath);
 
 
