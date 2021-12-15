@@ -7,6 +7,11 @@ const MongoClient = require('mongodb').MongoClient;
 
 const mongoUrl = "mongodb+srv://hali03:hali03@cluster0.finwj.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
+<html>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+</style>
+</html>
 
 const server = http.createServer((req, res) => {
     var filePath = path.join(
@@ -82,7 +87,7 @@ function displayCurrentContent(content, contentType, res) {
 }
 
 async function connectAndDisplay(age, gender, workout_type, res) {
-    var t = `<body style = "background: linear-gradient(#002240, white); color: #fff; font-family: 'Verdana', sans-serif; text-align: center">`;
+    var t = `<body style = "background: linear-gradient(#002240, white); color: #fff; font-family: 'Lato', sans-serif; text-align: center">`;
 
     MongoClient.connect(mongoUrl, {useUnifiedTopology: true}, async (err, database) => {
         if (err) {
