@@ -19,10 +19,11 @@ a{
 }
 .product{
     display: flex;
+    color: white;
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
-    background-color: #e2d0eb;
+    background-color: #047aed;
     border-radius: 15px;
     margin-bottom: 25px;
     margin-right: 5px;
@@ -32,8 +33,8 @@ a{
 .addBtn{
     padding: 5px;
     border: 1px solid #450264;
-    color: #efd8fa;
-    background: #2c023f;
+    color: white;
+    background: #002240;
     border-radius: 5px;
     font-size: large;
     cursor: pointer;
