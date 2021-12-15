@@ -2,6 +2,7 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    background-color: #0760b9;
 }
 a{
     width: 150px;
